@@ -1,0 +1,66 @@
+body{
+margin:0;
+background:linear-gradient(135deg,#ffd6e7,#ffc0cb);
+font-family:sans-serif;
+overflow:hidden;
+text-align:center;
+}
+
+.box{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(255,255,255,0.8);
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(255,105,180,0.4);
+}
+
+.gallery{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:15px;
+}
+
+.gallery img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:20px;
+animation:zoom 6s infinite alternate;
+}
+
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.1);}
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+.yes{background:#ff2e63;color:white;}
+.no{background:#777;color:white;}
+
+.cd{
+font-size:40px;
+animation:spin 3s linear infinite;
+animation-play-state:paused;
+}
+
+@keyframes spin{
+from{transform:rotate(0);}
+to{transform:rotate(360deg);}
+}
+
+.typeText{
+font-size:28px;
+color:#ff2e63;
+margin-top:15px;
+white-space:pre-line;
+}
